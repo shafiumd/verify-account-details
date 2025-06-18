@@ -1,0 +1,17 @@
+{
+  "name": "verify-account-details-fn",
+  "version": "1.0.0",
+  "description": "Appwrite function to verify bank account details by calling an external API (e.g., Paystack).",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "appwrite deploy function --functionId=[YOUR_VERIFY_ACCOUNT_FUNCTION_ID] --yes",
+    "create-tar": "tar -zcvf function-package.tar.gz ."
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "node-appwrite": "^11.1.0"
+  },
+  "devDependencies": {}
+}
